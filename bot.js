@@ -92,7 +92,7 @@ client.on('message', msg => {
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     msg.channel.sendEmbed(ozelmesajkontrol) }
-      msg.author.sendMessage('`Komutlar:\n\n' + prefix + 'komutlar\n' + prefix + 'temizle\n' + prefix + 'sunucubilgi\n' + prefix + 'davetet\n' + prefix + 'kullanıcıbilgim\n' + prefix + 'davet\n' + prefix + 'botu ekle\n`').then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
+      msg.author.sendMessage('`Komutlar:\n\n' + prefix + 'komutlar\n' + prefix + 'temizle\n' + prefix + 'sunucubilgi\n' + prefix + 'davetet\n' + prefix + 'kullanıcıbilgim\n' + prefix + 'ping\n`').then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
 
   }
 });
@@ -127,6 +127,23 @@ client.on('message', msg => {
       .addField('BOT mu?', msg.author.bot ? '\n Evet' : 'Hayır')
       console.log("!kullanıcıbilgim komutu " + msg.author.username + " tarafından kullanıldı.")
       return msg.channel.sendEmbed(kullanicibilgimk);
+  }
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === prefix + 'ping') {
+    if (msg.channel.type !== "dm") {
+      const ozelmesajkontrol = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField(':ping_pong: Pong!', 'Özel mesajlarını kontrol et. :postbox:');
+    msg.channel.sendEmbed(ozelmesajkontrol) }
+      const pingozel = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField('Ping:', '**' + client.ping + '**') 
+    return msg.author.sendEmbed(pingozel);
   }
 });
 
