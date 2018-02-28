@@ -19,8 +19,8 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-    if (message.content === prefix + "sunucubilgi") {
-        message.channel.sendMessage(`**Tabiki benim aksini düşünme Kral Benim lan ;D** <@${message.author.id}>`)
+    if (msg.content === prefix + "sunucubilgi") {
+        msg.channel.sendMessage(`**Tabiki benim aksini düşünme Kral Benim lan ;D** <@${message.author.id}>`)
 
 });
 // THIS  MUST  BE  THIS  WAY
