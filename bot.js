@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'sa') {
-    	message.reply('as');
+    	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin :ballot_box_with_check: ');
   	}
 });
 
