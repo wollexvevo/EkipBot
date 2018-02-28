@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+let prefix = "!";
+
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -8,6 +10,13 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'sa') {
     	message.reply('as');
+  	}
+});
+
+client.on('message', message => {
+      if (message.content.toLowerCase() === prefix + 'temizle') {
+        message.channel.bulkDelete(100);
+        message.channel.sendMessage("100 adet mesaj silindi!");
   	}
 });
 
