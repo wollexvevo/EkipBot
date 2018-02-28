@@ -14,7 +14,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-      if (message.content.toLowerCase() === prefix + 'temizle') {
+      iif (message.content === '!temizle 100') 
         message.channel.bulkDelete(100);
         message.channel.sendMessage("100 adet mesaj silindi!");
   	}
