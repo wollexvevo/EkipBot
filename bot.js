@@ -13,12 +13,5 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-      iif (message.content === '!temizle 100') 
-        message.channel.bulkDelete(100);
-        message.channel.sendMessage("100 adet mesaj silindi!");
-  	}
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
