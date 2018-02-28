@@ -5,6 +5,7 @@ const prefix = ('+')
 
 client.on('ready', () => {
     console.log('I am ready!');
+     client.user.setGame(prefix + 'yardım');
 });
 
 client.on('message', message => {
