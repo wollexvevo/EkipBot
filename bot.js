@@ -4,7 +4,6 @@ const prefix = ('+')
 
 
 client.on('ready', () => {
-    bot.user.setGame( prefix +"yardım | Sea Ben Bot <3") 
     console.log('I am ready!');
 });
 
