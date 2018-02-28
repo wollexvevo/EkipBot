@@ -18,10 +18,5 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', msg => {
-    if (msg.content === prefix + "sunucubilgi") {
-        msg.channel.sendMessage(`**Tabiki benim aksini düşünme Kral Benim lan ;D** <@${message.author.id}>`)
-
-});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
