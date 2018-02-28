@@ -108,22 +108,6 @@ client.on('message', msg => {
       msg.author.sendMessage("Link: https://discordapp.com/oauth2/authorize?client_id=418392785322901505&scope=bot&permissions=8").then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
   }
 });
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === prefix + 'restart') {
-    if (msg.author.id !== ayarlar.yapimci) {
-       const botsahib = new Discord.RichEmbed()
-    .setColor(0xFF0000)
-    .setTimestamp()
-    .setAuthor(msg.author.username, msg.author.avatarURL)
-    .addField(':warning: Uyarı :warning:', 'Bu komutu kullanabilmek için `Bot Sahibi` yetkisine sahip olmalısın.')
-    return msg.channel.sendEmbed(botsahib);
-    }
-    client.channels.get(ayarlar.botdurum).sendMessage("@everyone Görevli yeniden başlatılıyor kesintiden dolayı özür dileriz...").then(message => {
-      console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)
-      process.exit(1);
-    }).catch(console.error)
-  }
-});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
