@@ -92,7 +92,7 @@ client.on('message', msg => {
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     msg.channel.sendEmbed(ozelmesajkontrol) }
-      msg.author.sendMessage('`Komutlar:\n\n' + prefix + 'komutlar\n' + prefix + 'temizle\n' + prefix + 'sunucubilgi\n + prefix + 'davetet\n`').then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
+      msg.author.sendMessage('`Komutlar:\n\n' + prefix + 'komutlar\n' + prefix + 'temizle\n' + prefix + 'sunucubilgi\n' + prefix + 'davetet\n`').then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
   }
 });
 
