@@ -11,5 +11,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === prefix + "eniyibot") {
+        message.channel.sendMessage(`**Tabiki benim aksini düşünme Kral Benim lan ;D** <@${message.author.id}>
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
