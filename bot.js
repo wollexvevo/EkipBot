@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = ('prefix')
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -17,5 +18,10 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', msg => {
+    if (message.content === prefix + "sunucubilgi") {
+        message.channel.sendMessage(`**Tabiki benim aksini düşünme Kral Benim lan ;D** <@${message.author.id}>`)
+
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
