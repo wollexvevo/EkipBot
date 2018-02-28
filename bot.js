@@ -108,6 +108,18 @@ client.on('message', msg => {
       msg.author.sendMessage("Link: https://discordapp.com/oauth2/authorize?client_id=418392785322901505&scope=bot&permissions=8").then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
   }
 });
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === prefix + 'kurallar') {
+    if (msg.channel.type !== 'dm') {
+      const ozelmesajkontrol = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
+    msg.channel.sendEmbed(ozelmesajkontrol) }
+      msg.author.sendMessage(ayarlar.kurallar).then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
+  }
+});
 
 
 // THIS  MUST  BE  THIS  WAY
