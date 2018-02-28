@@ -108,6 +108,26 @@ client.on('message', msg => {
       msg.author.sendMessage("Link: https://discordapp.com/oauth2/authorize?client_id=418392785322901505&scope=bot&permissions=8").then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
   }
 });
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === prefix + 'kullanıcıbilgim')
+    if (msg.channel.type !== "group") {
+        var Durum = msg.author.presence.status;
+        var Durm = (Durum == "online" ? (0x00AE86) : (Durum == "offline" ? (0x808080) : (Durum == "idle" ? (0xFFFF00) : (Durum == "dnd" ? (0xFF0000) : (0x00AE86)))))
+        var durm = (Durum == "online" ? ("Çevrimiçi") : (Durum == "offline" ? ("Çevrimdışı") : (Durum == "idle" ? ("Boşta") : (Durum == "dnd" ? ("Rahatsız Etmeyin") : ("Bilinmiyor/bulunamadı.")))))
+      const kullanicibilgimk = new Discord.RichEmbed()
+      .setAuthor(msg.author.username, msg.author.avatarURL)
+      .setColor(Durm)
+      .setTimestamp()
+      .addField('Ad:', msg.author.username + '#' + msg.author.discriminator)
+      .addField('ID:', msg.author.id)
+      .addField('Kayıt tarihi:', msg.author.createdAt)
+      .addField('Durum:', durm)
+      .addField('Şu an oynadığı oyun:', msg.author.presence.game ? msg.author.presence.game.name : 'Şu an oyun oynamıyor')
+      .addField('BOT mu?', msg.author.bot ? '\n Evet' : 'Hayır')
+      console.log("!kullanıcıbilgim komutu " + msg.author.username + " tarafından kullanıldı.")
+      return msg.channel.sendEmbed(kullanicibilgimk);
+  }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
