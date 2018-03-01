@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+client.user.setActivity(hahayt, {type : "PLAYING"});
 const prefix = ('+')
 
 client.on('ready', () => {
-    client.user.setActivity(hahayt, {type : "PLAYING"});
     console.log('AYNEN KNK');
   
 });
