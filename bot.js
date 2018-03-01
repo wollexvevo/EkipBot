@@ -3,8 +3,9 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-  client.user.setGame(`${prefix}yardım | sa`');
-  client.user.setStatus('online')
+  console.log('HAZIRLANDIM');
+  client.user.setStatus('dnd')
+  client.user.setActivity(Playing, { type: 'WATCHING' })
 });
 
 client.on('message', message => {
