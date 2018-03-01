@@ -34,7 +34,8 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === '+komutlarım') {
-    	message.reply(' **Bütün Komutlarım**
+    	message.reply('
+ **Bütün Komutlarım**
 - **Sa** yazarsanız **Aleyküm Selam** diye cevap verir
 - **Selam** yazarsanız **Aleyküm Selam** diye cevap verir
 - **+örümcek** yazarsanız **Korktunmuu**'der
