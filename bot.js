@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-    console.log('AYNEN KNK');
-    bot.user.setPresence({ status: 'online', game: { name: 'Unterned' } });
+  client.user.setGame('GAME HERE')
+})
   
 });
 
