@@ -4,8 +4,7 @@ const prefix = ('+')
 
 client.on('ready', () => {
   client.user.setGame('GAME HERE')
-})
-  
+
 });
 
 client.on('message', message => {
