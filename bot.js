@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-  client.user.setGame('GAME HERE')
+  client.user.setGame('grand theft auto v')
 
 });
 
