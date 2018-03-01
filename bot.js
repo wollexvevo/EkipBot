@@ -4,7 +4,7 @@ const prefix = ('+')
 
 client.on('ready', () => {
   console.log('HAZIRLANDIM');
-  client.user.setStatus('dnd')
+  client.user.setStatus('online')
   client.user.setActivity(Playing, { type: 'WATCHING' })
 });
 
