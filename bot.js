@@ -29,6 +29,7 @@ client.on('message', message => {
   	}
 });
  client.on('message', msg => {
+     if (message.content === prefix + "deneme") {
      message.channel.sendMessage(stripIndents`
 **Selam, ben ${client.user.username}!** Şuanda görmekte olduğunuz kısım benim bütün komutlarımı göstermektedir.
 
