@@ -32,29 +32,7 @@ client.on('message', message => {
     	message.reply(' Botu Davet Edebilirsin | https://discordapp.com/oauth2/authorize?client_id=418392785322901505&scope=bot&permissions=8 ');
   	}
 });
-client.on('message', message => {
-    if (message.content === '+komutlarım') {
-    	message.reply('**Selam, ben ${bot.user.username}!** Şuanda görmekte olduğunuz kısım benim bütün komutlarımı göstermektedir.
 
-
-**Bilgi Komutları**
-\`\`\`fix
-${prefix}yardım - Botun bütün komutlarını size gösterir.
-${prefix}sunucubilgi - Sunucu hakkkında detaylı bilgi verir.
-${prefix}bilgi - Bot hakkında bilgi verir.
-${prefix}temizle - Sohbeti temizler.
-${prefix}davetet - Botumuzu sunucunuza davet edebilirsiniz.
-\`\`\`
-
-**Eğlence Komutları**
-\`\`\`fix
-${prefix}kurabiye - Size kurabiye verir.
-${prefix}yılan - Sizi Korkutur :D
-${prefix}örümcek - Sizi Korkutur :D
-${prefix}eniyibot - En iyi botu tanıtır.
-\`\`\` `)');
-  	}
-});
  
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
