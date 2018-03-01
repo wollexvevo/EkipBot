@@ -2,9 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = ('+')
 
-client.on("ready", () => {
-    client.user.setGame( prefix +"yardım | Wollex Team <3") 
-    console.log("Wollex Bot v1.0.0 Sürümü ile Botun Paneli Aktif Hala Geldi")   
+client.on('ready', () => {
+  console.log('HAZIRLANDIM');
+  client.user.setStatus('dnd')
+  client.user.setActivity(`Oynuyor Yerine Yazıcağın Yer`, { type: 'WATCHING' })
 });
 
 client.on('message', message => {
