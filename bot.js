@@ -2,12 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = ('+')
 
-bot.user.setStatus('Online')
-bot.user.setGame('Hello')
-
-client.on('ready', () => {
-  console.log('AYNEN KNK');
-
+bot.on("ready", () => {
+    bot.user.setGame( prefix +"yardım | Wollex Team <3") 
+    console.log("Wollex Bot v1.0.0 Sürümü ile Botun Paneli Aktif Hala Geldi")   
 });
 
 client.on('message', message => {
