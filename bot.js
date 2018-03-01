@@ -32,7 +32,12 @@ client.on('message', message => {
     	message.reply(' Botu Davet Edebilirsin | https://discordapp.com/oauth2/authorize?client_id=418392785322901505&scope=bot&permissions=8 ');
   	}
 });
-
- 
+client.on("message", message => {
+    const kufur = ["amk", "aq"];
+    if (kufur.some(word => message.content.includes(word)) ) {
+        message.reply("**Küfür etme lan !** :rage:")
+        message.delete()
+    }
+});
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
