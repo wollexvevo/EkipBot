@@ -20,7 +20,12 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === '+örümcek') {
-    	message.reply('aynen ');
+    	message.reply(' Korktunmuuu | https://goo.gl/6PfWfP ');
+  	}
+});
+client.on('message', message => {
+    if (message.content === '+yılan') {
+    	message.reply(' Korktunmuuu | https://goo.gl/G3DD58 ');
   	}
 });
 
