@@ -2,8 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = ('+')
 
+bot.user.setStatus('Online')
+bot.user.setGame('Hello')
+
 client.on('ready', () => {
-  client.user.setGame('grand theft auto v')
+  console.log('AYNEN KNK');
 
 });
 
