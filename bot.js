@@ -3,9 +3,8 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-  client.user.setGame(`${prefix}yardım | ${client.users.size} kullanıcı | ${client.channels.size} kanal | ${client.guilds.size} sunucu`');
+  client.user.setGame(`${prefix}yardım | sa`');
   client.user.setStatus('online')
-  console.log(`${client.users.size} kullanıcı | ${client.channels.size} kanal | ${client.guilds.size} sunucu`);
 });
 
 client.on('message', message => {
