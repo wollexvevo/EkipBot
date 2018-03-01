@@ -20,6 +20,13 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
+  if (msg.content.toLowerCase() === prefix + 'örümcek') {
+    if  (msg.channel.type === 'dm') {
+        msg.author.sendMessage(sea).then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
+    }
+});
+
+client.on('message', msg => {
   if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
     if  (msg.channel.type === 'dm') {
       const ozelmesajuyarii = new Discord.RichEmbed()
@@ -148,6 +155,8 @@ client.on('message', msg => {
     return msg.author.sendEmbed(pingozel);
   }
 });
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
