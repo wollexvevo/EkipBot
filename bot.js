@@ -7,6 +7,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if (message.content === 'Sa') {
+    	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'sa') {
     	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
   	}
