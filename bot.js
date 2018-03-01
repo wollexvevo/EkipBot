@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
+    client.user.setActivity(hahayt, {type : "PLAYING"});
     console.log('AYNEN KNK');
   
 });
