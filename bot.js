@@ -105,6 +105,8 @@ client.on('message', msg => {
     msg.channel.sendEmbed(ozelmesajkontrol) }
       msg.author.sendMessage('`Komutlar:\n\n' + prefix + 'komutlar\n' + prefix + 'temizle\n' + prefix + 'sunucubilgi\n' + prefix + 'davetet\n' + prefix + 'kullanıcıbilgim\n' + prefix + 'ping\n\n`').then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
       
+      msg.author.sendMessage('`Eğlence Komutları:\n\n' + prefix + 'komutlar\n' + prefix + 'temizle\n' + prefix + 'sunucubilgi\n' + prefix + 'davetet\n' + prefix + 'kullanıcıbilgim\n' + prefix + 'ping\n\n`').then(message => console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] Gönderilen mesaj: ${message.content}`)).catch(console.error);
+
 
   }
 });
