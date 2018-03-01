@@ -33,7 +33,7 @@ client.on('message', message => {
   	}
 });
 client.on("message", message => {
-    const kufur = ["amk", "aq"];
+    const kufur = ["amk", "aq", "oç", "ağla", "sikerim", ];
     if (kufur.some(word => message.content.includes(word)) ) {
         message.reply("**Küfür etme lan !** :rage:")
         message.delete()
