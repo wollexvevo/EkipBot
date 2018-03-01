@@ -34,13 +34,25 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === '+komutlarım') {
-    	message.reply('
- **Bütün Komutlarım**
-- **Sa** yazarsanız **Aleyküm Selam** diye cevap verir
-- **Selam** yazarsanız **Aleyküm Selam** diye cevap verir
-- **+örümcek** yazarsanız **Korktunmuu**'der
-- **+yılan** yazarsanız **Korktunmuu**'der
-- **+davet** yazarak botu sucununa davet edebilirsin ');
+    	message.reply('**Selam, ben ${bot.user.username}!** Şuanda görmekte olduğunuz kısım benim bütün komutlarımı göstermektedir.
+
+
+**Bilgi Komutları**
+\`\`\`fix
+${prefix}yardım - Botun bütün komutlarını size gösterir.
+${prefix}sunucubilgi - Sunucu hakkkında detaylı bilgi verir.
+${prefix}bilgi - Bot hakkında bilgi verir.
+${prefix}temizle - Sohbeti temizler.
+${prefix}davetet - Botumuzu sunucunuza davet edebilirsiniz.
+\`\`\`
+
+**Eğlence Komutları**
+\`\`\`fix
+${prefix}kurabiye - Size kurabiye verir.
+${prefix}yılan - Sizi Korkutur :D
+${prefix}örümcek - Sizi Korkutur :D
+${prefix}eniyibot - En iyi botu tanıtır.
+\`\`\` `)');
   	}
 });
  
