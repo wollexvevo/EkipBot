@@ -42,9 +42,9 @@ client.on("message", message => {
         message.delete()
     }
   });
-  client.on('message', message => {
+ client.on('message', message => {
     if (message.content === '+komutlar') {
-    	message.reply("[+yılan] Sizi Korkutur = [+örümcek] Sizi Korkutur  `);
+    	message.reply(' [+örümcek] Sizi Korkutur | dı ');
   	}
 });
  
