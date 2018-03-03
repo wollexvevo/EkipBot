@@ -44,7 +44,7 @@ client.on("message", message => {
   });
  client.on('message', message => {
     if (message.content === '+komutlar') {
-    	message.reply(' [**+örümcek**] Sizi Korkutur | [**+yılan**] Sizi Korkutur | ');
+    	message.reply(' [**+örümcek**] Sizi Korkutur | [**+yılan**] Sizi Korkutur | **Bot Beta Aşamasındadır** | ');
   	}
 });
  
