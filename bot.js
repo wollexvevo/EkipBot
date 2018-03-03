@@ -41,6 +41,7 @@ client.on("message", message => {
         message.reply("**Küfür etme lan !** :rage:")
         message.delete()
     }
+  });
   client.on('message', message => {
     if (message.content === '+komutlar') {
     	message.reply("**Eğlence ve Kullanıcı Komutları 🤠**", `w!banned = Dene ve Gör! \nw!avatarım = Avatarınınızı Gösterir. \nw!herkesebendençay = Herkese Çay Alırsınız. \nw!koş = Koşarsınız.\nw!çayiç = Çay İçersiniz. \nw!çekiç = İstediğiniz Kişiye Çekiç Atarsınız. \nw!çayaşekerat = Çaya Şeker Atarsınız. \nw!yumruh-at = Yumruk Atarsınız. \nw!yaz = Bota İstediğiniz Şeyi Yazdırırsınız. \nw!sunucuresmi = BOT Sunucunun Resmini Atar. \nw!sunucubilgi = BOT Sunucu Hakkında Bilgi Verir. \nw!kullanıcıbilgim = Sizin Hakkınızda Bilgi Verir. `);
