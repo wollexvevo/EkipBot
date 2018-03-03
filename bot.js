@@ -44,7 +44,7 @@ client.on("message", message => {
   });
   client.on('message', message => {
     if (message.content === '+komutlar') {
-    	message.reply("**+yılan** Sizi Korkutur | **+örümcek** Sizi Korkutur | `);
+    	message.reply("**+yılan** Sizi Korkutur = **+örümcek** Sizi Korkutur  `);
   	}
 });
  
