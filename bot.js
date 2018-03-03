@@ -44,6 +44,6 @@ client.on("message", message => {
         message.reply("**Küfür etme lan !** :rage:")
         message.delete()
     }
-});
+});f
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
