@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
+  client.user.setGame("Merhabalar ^^")
   console.log('HAZIRLANDIM');
 });
 
