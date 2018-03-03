@@ -47,6 +47,11 @@ client.on("message", message => {
     	message.reply(' [**+örümcek**] Sizi Korkutur | [**+yılan**] Sizi Korkutur | **Bot Beta Aşamasındadır** | ');
   	}
 });
+client.on('message', message => {
+    if (message.content === '+davet') {
+    	message.reply('**Davet Linkim Davet Et Hemen Gelirim**<3 | https://goo.gl/9vcQai ');
+  	}
+});
  
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
