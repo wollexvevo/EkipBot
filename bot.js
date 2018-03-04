@@ -35,14 +35,6 @@ client.on('message', message => {
   	}
 });
 
-
-client.on("message", message => {
-    const kufur = ["amk", "aq", "oç", "ağla", "sikerim", ];
-    if (kufur.some(word => message.content.includes(word)) ) {
-        message.reply("**Küfür etme lan !** :rage:")
-        message.delete()
-    }
-  });
  client.on('message', message => {
     if (message.content === '+komutlar') {
     	message.reply(' [**+örümcek**] Sizi Korkutur | [**+yılan**] Sizi Korkutur | **Bot Beta Aşamasındadır** | ');
