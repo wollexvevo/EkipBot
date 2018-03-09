@@ -12,6 +12,11 @@ client.on('message', message => {
     	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
   	}
 });
+client.on('message', message => {
+    if (message.content === 's.a') {
+    	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
+  	}
+});
 
 client.on('message', message => {
     if (message.content === 'sa') {
