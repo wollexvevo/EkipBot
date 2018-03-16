@@ -52,15 +52,15 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-  if (msg.content.toLowerCase() === '+bilgi') {
-    if (msg.channel.type !== 'dm') {
+  if (message.content.toLowerCase() === '+bilgi') {
+    if (message.channel.type !== 'dm') {
       const ozelmesajkontrol = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setAuthor(msg.author.username, msg.author.avatarURL)
-    .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
-    msg.channel.sendEmbed(ozelmesajkontrol) }
-      msg.author.sendMessage('**Bot Bilgisi**');
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField(message.author.username, 'Özel mesajlarını kontrol et. :postbox:');
+    message.channel.sendEmbed(ozelmesajkontrol) }
+      message.author.sendMessage('**Bot Bilgisi**');
   }
 });
 
