@@ -51,6 +51,18 @@ client.on('message', message => {
     	message.reply('**Davet Linkim Davet Et Hemen Gelirim**<3 | https://goo.gl/9vcQai ');
   	}
 });
+client.on('message', message => {
+  if (msg.content.toLowerCase() === '+bilgi') {
+    if (msg.channel.type !== 'dm') {
+      const ozelmesajkontrol = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
+    msg.channel.sendEmbed(ozelmesajkontrol) }
+      msg.author.sendMessage('**Bot Bilgisi**');
+  }
+});
 
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
