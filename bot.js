@@ -98,8 +98,7 @@ client.on('message', msg => {
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     msg.channel.sendEmbed(ozelmesajkontrol) }
-      msg.author.sendMessage('**Bot Yapımcısı**');
-      msg.author.sendMessage('**WolleX**');
+      msg.author.sendMessage('Bot Yapımcısı');
   }
 });
 
