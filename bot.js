@@ -4,7 +4,6 @@ const prefix = ('+')
 
 client.on('ready', () => {
   console.log(`BOT: Aktif!`);
-  client.user.setActivity('za')
 });
 
 client.on('message', message => {
