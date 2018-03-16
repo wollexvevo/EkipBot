@@ -4,7 +4,7 @@ const prefix = ('+')
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setGame('za')
+    client.user.setGame('https://git.io/d.js-heroku', {type: 'WATCHING'});
 });
 
 client.on('message', message => {
