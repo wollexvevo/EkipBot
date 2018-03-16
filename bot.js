@@ -43,7 +43,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '+komutlar') {
     	message.channel.send('**Botun Ana Komutları**"');
-      message.channel.send('+temizle = Sohbet Mesajlarını Siler. \n+bilgi = BOT Kendisi Hakkında Bilgi Verir. \n+ping = BOT Gecikme Süresini Söyler. \n+kullanıcıbilgim = Kendiniz Hakkında Bilgi Verir. \n\n**Bot Beta Aşamasındadır**');
+      message.channel.send('**+**temizle = Sohbet Mesajlarını Siler. \n**+**bilgi = BOT Kendisi Hakkında Bilgi Verir. \n**+**ping = BOT Gecikme Süresini Söyler. \n**+**kullanıcıbilgim = Kendiniz Hakkında Bilgi Verir. \n\n**Bot Beta Aşamasındadır**');
   	}
 });
 client.on('message', message => {
