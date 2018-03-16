@@ -4,7 +4,7 @@ const prefix = ('+')
 
 client.on('ready', () => {
   console.log('HAZIRLANDIM');
-  console.log("BOT: Şu an " + client.channels.size + " adet kanala ve " + client.guilds.size + " adet sunucuya hizmet veriliyor!");
+  client.user.setGame('+yardım');
 });
 
 client.on('message', message => {
