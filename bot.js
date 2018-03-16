@@ -60,7 +60,7 @@ client.on('message', message => {
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField(message.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
-      message.author.sendMessage('**Bot Bilgisi**\n**Wollex VEVO**');
+      message.author.sendMessage('**Bot Yapımcısı**\n\n__! ωøllεχ VΞVØ 🔱#8240__\n\n**Bot Yardımcısı**\n\n__!idrisbadur#9458__');
   }
 });
 
