@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-    console.log('I am ready!');
     client.user.setGame('https://git.io/d.js-heroku', {type: 'WATCHING'});
+    console.log('I am ready!');
 });
 
 client.on('message', message => {
