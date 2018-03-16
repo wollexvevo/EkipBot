@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-  client.user.setGame('+yardım');
   console.log('HAZIRLANDIM');
+  console.log("BOT: Şu an " + client.channels.size + " adet kanala ve " + client.guilds.size + " adet sunucuya hizmet veriliyor!");
 });
 
 client.on('message', message => {
