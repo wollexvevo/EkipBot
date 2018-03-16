@@ -81,7 +81,7 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
-  if (message.content.toLowerCase() === prefix + 'kullanıcıbilgim')
+  if (message.content.toLowerCase() === '+kullanıcıbilgim')
     if (message.channel.type !== "group") {
         var Durum = message.author.presence.status;
         var Durm = (Durum == "online" ? (0x00AE86) : (Durum == "offline" ? (0x808080) : (Durum == "idle" ? (0xFFFF00) : (Durum == "dnd" ? (0xFF0000) : (0x00AE86)))))
