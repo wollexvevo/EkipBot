@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
+  console.log(`BOT: Aktif!`);
   client.user.setActivity('za')
 });
 
