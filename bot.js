@@ -64,7 +64,7 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
-  if (msg.content.toLowerCase() === prefix + 'ping') {
+  if (msg.content.toLowerCase() === '+ping') {
     if (msg.channel.type !== "dm") {
       const ozelmesajkontrol = new Discord.RichEmbed()
     .setColor(0x00AE86)
