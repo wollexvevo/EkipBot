@@ -26,7 +26,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
     if (message.content === 'selam') {
-    	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
+    	 message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
   	}
 });
 client.on('message', message => {
