@@ -19,7 +19,7 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
+  if (message.content === 'sa') {
     	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
   	}
 });
