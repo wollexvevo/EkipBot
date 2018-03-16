@@ -89,6 +89,18 @@ client.on('message', msg => {
     return msg.channel.sendEmbed(sohbetsilindi);
       console.log("Sohbet " + msg.member + " tarafından silindi!");
 }}});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '+bilgi') {
+    if (msg.channel.type !== 'dm') {
+      const ozelmesajkontrol = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
+    msg.channel.sendEmbed(ozelmesajkontrol) }
+      msg.author.sendMessage('seaea');
+  }
+});
 
  
 // AĞLAYIN :D
