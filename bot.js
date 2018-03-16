@@ -64,20 +64,20 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
-  if (msg.content.toLowerCase() === '+ping') {
-    if (msg.channel.type !== "dm") {
+  if (message.content.toLowerCase() === '+ping') {
+    if (message.channel.type !== "dm") {
       const ozelmesajkontrol = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .setAuthor(message.author.username, message.author.avatarURL)
     .addField(':ping_pong: Pong!', 'Özel mesajlarını kontrol et. :postbox:');
-    msg.channel.sendEmbed(ozelmesajkontrol) }
+    message.channel.sendEmbed(ozelmesajkontrol) }
       const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .setAuthor(message.author.username, message.author.avatarURL)
     .addField('Ping:', '**' + client.ping + '**') 
-    return msg.author.sendEmbed(pingozel);
+    return message.author.sendEmbed(pingozel);
   }
 });
 
