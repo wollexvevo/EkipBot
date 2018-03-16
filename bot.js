@@ -51,10 +51,8 @@ client.on('message', message => {
     	message.reply('**Davet Linkim Davet Et Hemen Gelirim**<3 | https://goo.gl/9vcQai ');
   	}
 });
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === '+sunucubilgi') {
-    if  (msg.channel.type === 'dm') {
-      const ozelmesajuyarii = new Discord.RichEmbed()
+client.on('message', message => {
+  if (msg.content.toLowerCase() === '+sunucubilgi') {-
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(msg.author.username, msg.author.avatarURL)
