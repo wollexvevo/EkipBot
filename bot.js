@@ -40,9 +40,9 @@ client.on('message', message => {
   	}
 });
 
- client.on('message', message => {
+client.on('message', message => {
     if (message.content === '+komutlar') {
-    	message.reply(' [**+örümcek**] Sizi Korkutur | [**+yılan**] Sizi Korkutur | **Bot Beta Aşamasındadır** | ');
+    	message.reply('**Botun Ana Komutları**", "w!yardım = BOT Komutlarını Atar. \nw!bilgi = BOT Kendisi Hakkında Bilgi Verir. \nw!ping = BOT Gecikme Süresini Söyler. \nw!davet = BOT Davet Linkini Atar. \nw!istatistik = BOT İstatistiklerini Atar.');
   	}
 });
 client.on('message', message => {
