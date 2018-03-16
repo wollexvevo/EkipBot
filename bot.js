@@ -3,8 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-  console.log('HAZIRLANDIM');
-  client.user.setGame('+yardım');
+  client.user.setActivity('za')
 });
 
 client.on('message', message => {
