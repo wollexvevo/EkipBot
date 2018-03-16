@@ -4,7 +4,7 @@ const prefix = ('+')
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity('za')
+    client.user.setGame('za')
 });
 
 client.on('message', message => {
