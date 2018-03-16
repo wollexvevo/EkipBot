@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-  client.user.setGame(prefix + 'yardım');
+  client.user.setGame('+yardım');
   console.log('HAZIRLANDIM');
 });
 
