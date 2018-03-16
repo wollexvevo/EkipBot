@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.setPresence('Bir oyun')
+    client.setPresence('Grand Theft Auto V')
     console.log('I am ready!');
 });
 
