@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-    client.user.setGame('https://git.io/d.js-heroku', {type: 'WATCHING'});
+    bot.user.setGame('GAME HERE')
     console.log('I am ready!');
 });
 
