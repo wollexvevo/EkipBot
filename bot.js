@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-    bot.user.setGame('GAME HERE')
     console.log('I am ready!');
 });
 
