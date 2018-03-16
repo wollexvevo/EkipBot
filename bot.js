@@ -98,7 +98,7 @@ client.on('message', msg => {
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .addField(msg.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     msg.channel.sendEmbed(ozelmesajkontrol) }
-      msg.author.sendMessage('seaea');
+      msg.author.sendMessage('```Bot Yapımcısı```\n **! ωøllεχ VΞVØ 🔱#8240**');
   }
 });
 
