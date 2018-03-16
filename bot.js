@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
-    client.setPresence('Bir oyun')
     console.log('I am ready!');
 
 });
