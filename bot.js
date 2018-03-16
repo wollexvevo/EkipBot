@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const prefix = ('+')
 
 client.on('ready', () => {
+    client.user.setPresence('eheh')
     console.log('I am ready!');
-
 });
 
 client.on('message', message => {
