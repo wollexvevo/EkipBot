@@ -51,30 +51,7 @@ client.on('message', message => {
     	message.reply('**Davet Linkim Davet Et Hemen Gelirim**<3 | https://goo.gl/9vcQai ');
   	}
 });
-client.on('message', message => {
-  if (msg.content.toLowerCase() === '+sunucubilgi') {-
-    .setColor(0xFF0000)
-    .setTimestamp()
-    .setAuthor(msg.author.username, msg.author.avatarURL)
-    .addField(':warning: Uyarı :warning:', 'Bu komutu özel mesajlarda kullanamazsın.')
-    msg.author.sendEmbed(ozelmesajuyarii); }
-    if (msg.channel.type !== 'dm') {
-      const sunucubilgi = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTimestamp()
-    .setAuthor(msg.guild.name, msg.guild.iconURL)
-    .addField('Ad:', msg.guild.name)
-    .addField('ID', msg.guild.id)
-    .addField('Ana kanal:', msg.guild.defaultChannel)
-    .addField('Bölge', msg.guild.region)
-    .addField('Üye sayısı:', msg.guild.memberCount)
-    .addField('Sahibi:', msg.guild.owner)
-    .addField('Kanal sayısı:', msg.guild.channels.size)
-    .addField('Oluşturulma tarihi:', msg.guild.createdAt)
-    return  msg.channel.sendEmbed(sunucubilgi);
-    }
-  }
-});
+
  
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
