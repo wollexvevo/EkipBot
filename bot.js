@@ -43,7 +43,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '+komutlar') {
     	message.channel.send('**Botun Ana Komutları**"');
-      message.channel.send('+temizle = Sohbet Mesajlarını Siler. \nw!bilgi = BOT Kendisi Hakkında Bilgi Verir. \nw!ping = BOT Gecikme Süresini Söyler. \nw!davet = BOT Davet Linkini Atar. \nw!istatistik = BOT İstatistiklerini Atar.');
+      message.channel.send('+temizle = Sohbet Mesajlarını Siler. \n+bilgi = BOT Kendisi Hakkında Bilgi Verir. \n+ping = BOT Gecikme Süresini Söyler. \nw!davet = BOT Davet Linkini Atar. \nw!istatistik = BOT İstatistiklerini Atar.');
   	}
 });
 client.on('message', message => {
@@ -61,6 +61,23 @@ client.on('message', message => {
     .addField(message.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
       message.author.sendMessage('**Bot Yapımcısı**\n\n__! ωøllεχ VΞVØ 🔱#8240__\n\n**Bot Yardımcısı**\n\n__!idrisbadur#9458__');
+  }
+});
+client.on('message', message => {
+  if (msg.content.toLowerCase() === prefix + 'ping') {
+    if (msg.channel.type !== "dm") {
+      const ozelmesajkontrol = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField(':ping_pong: Pong!', 'Özel mesajlarını kontrol et. :postbox:');
+    msg.channel.sendEmbed(ozelmesajkontrol) }
+      const pingozel = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setTimestamp()
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .addField('Ping:', '**' + client.ping + '**') 
+    return msg.author.sendEmbed(pingozel);
   }
 });
 
