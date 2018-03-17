@@ -60,7 +60,7 @@ client.on('message', message => {
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField(message.author.username, 'Özel mesajlarını kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
-      message.author.sendMessage('**Bot Yapımcısı**\n\n__! ωøllεχ VΞVØ 🔱#8240__\n\n**Bot Yardımcısı**\n\n__!idrisbadur#9458__');
+      message.author.sendMessage('**Bot Yapımcısı**\n\n__! ωøllεχ VΞVØ 🔱#8240__\n\n**Bot Bilgileri**\n\n__Sürüm : 0.1\nYapım Tarihi : 16.03.2018__');
   }
 });
 client.on('message', message => {
