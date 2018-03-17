@@ -100,23 +100,6 @@ client.on('message', message => {
       return message.channel.sendEmbed(kullanicibilgimk);
   }
 });
-    client.on('message', message => {
-    if (message.content === "+sunucubilgi") {
-    if (message.channel.type !== "groups) {
-            .addField("Sunucu Adı", message.guild.name, true)
-
-            .addField("Sunucu ID", message.guild.id, true)
-
-            .addField("Sunucu Sahibi", message.guild.owner, true)
-
-            .addField("Toplam Üye Sayısı", message.guild.memberCount, true)
-
-            .addField("AFK Süresi", message.guild.afkTimeout, true)
-
-            .setFooter("Oluşturulma Tarihi " + message.guild.createdAt)
-
-            .setColor(0xff0000)
-    });
 
 // AĞLAYIN :D
 client.login(process.env.BOT_TOKEN);
