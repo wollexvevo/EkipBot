@@ -48,7 +48,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === '+davet') {
-    	message.reply('**Davet Linkim Davet Et Hemen Gelirim**<3 | https://goo.gl/9vcQai ');
+    	message.reply('**Davet Linkim Davet Et Hemen Gelirim**<3 | https://goo.gl/YvpPDv ');
   	}
 });
 client.on('message', message => {
