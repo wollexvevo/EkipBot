@@ -28,3 +28,6 @@ client.on('message', message => {
     	 message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
   	}
 });
+
+client.login(process.env.BOT_TOKEN);
+
