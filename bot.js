@@ -102,8 +102,7 @@ client.on('message', message => {
 });
     client.on('message', message => {
     if (message.content === "+sunucubilgi") {
-        const embed = new Discord.RichEmbed()
-
+    if (message.channel.type !== "groups) {
             .addField("Sunucu Adı", message.guild.name, true)
 
             .addField("Sunucu ID", message.guild.id, true)
@@ -117,8 +116,6 @@ client.on('message', message => {
             .setFooter("Oluşturulma Tarihi " + message.guild.createdAt)
 
             .setColor(0xff0000)
-
-        return message.channel.sendEmbed(sunucubilgimk);
     });
 
 // AĞLAYIN :D
