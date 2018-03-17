@@ -100,6 +100,7 @@ client.on('message', message => {
       return message.channel.sendEmbed(kullanicibilgimk);
   }
 });
+    client.on('message', message => {
     if (message.content === "+sunucubilgi") {
         const embed = new Discord.RichEmbed()
 
