@@ -117,7 +117,7 @@ client.on('message', message => {
 
             .setColor(0xff0000)
 
-        return message.channel.sendEmbed(embed)
+        return message.channel.sendEmbed(sunucubilgimk);
     });
 
 // AĞLAYIN :D
