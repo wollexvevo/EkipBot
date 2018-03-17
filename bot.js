@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {T
-    if (message.content === 'Sa') {
+    if (message.content === 'Sa') {ggggg
     	message.reply('**Aleyküm Selamm, sunucumuza hoşgeldin** :ballot_box_with_check: ');
   	}
 });
